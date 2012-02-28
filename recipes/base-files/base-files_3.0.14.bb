@@ -1,7 +1,7 @@
 DESCRIPTION = "Miscellaneous files for the base system."
 SECTION = "base"
 PRIORITY = "required"
-PR = "r103"
+PR = "r104"
 LICENSE = "GPL"
 
 SRC_URI = " \
@@ -47,11 +47,14 @@ dirs755 = "/bin /boot /dev ${sysconfdir} ${sysconfdir}/default \
 	   /media/union /media/realroot /media/hdd \
 	   /media/mmc1"
 
+dirs755_append_usrp-e1xx = " /media/FAT"
+
 dirs755_micro = "/dev /proc /sys ${sysconfdir}"
 dirs2775_micro = ""
 dirs1777_micro = "/tmp"
 
 media = "card cf net ram"
+media_append_usrp-e1xx = " FAT"
 media_micro = ""
 
 volatiles = "cache run log lock tmp"
