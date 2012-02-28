@@ -12,7 +12,7 @@ XSERVER ?= "xserver-xorg \
            xf86-input-keyboard \
 "
 
-PR = "r17"
+PR = "r18"
 
 PACKAGES += "task-gnome-apps task-gnome-sdk task-gnome-fonts task-gnome task-gnome-gstreamer task-gnome-perl task-gnome-cups task-gnome-pulseaudio task-gnome-themes task-gnome-totem task-gnome-xserver-base task-gnome-xserver"
 
@@ -90,6 +90,7 @@ RDEPENDS_task-gnome = " \
   gnome-mount \
   gnome-nettool \
 #  gnome-packagekit packagekit packagekit-gtkmodule \
+  packagekit packagekit-gtkmodule \
   gnome-panel libpanel-applet libgweather-locationdata \
   gnome-power-manager gnome-power-manager-applets \
   gnome-python gnome-python-extras \
