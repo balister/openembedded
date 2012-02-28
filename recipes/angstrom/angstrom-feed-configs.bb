@@ -1,10 +1,12 @@
 DESCRIPTION = "Configuration files for online package repositories aka feeds"
 LICENSE = "MIT"
 
+ANGSTROM_URI = "http://files.ettus.com"
+
 RRECOMMENDS_${PN} += "opkg"
 
 #PV = "${DISTRO_VERSION}"
-PR = "r14"
+PR = "r15"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 FEED_BASEPATH ?= "unstable/feed/"
