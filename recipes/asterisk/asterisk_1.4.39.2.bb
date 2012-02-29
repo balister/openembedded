@@ -13,6 +13,7 @@ SRC_URI="http://downloads.asterisk.org/pub/telephony/asterisk/old-releases/aster
 #	file://sounds.xml.patch \
 	file://Makefile.patch \
 	file://asterisk-1.4-bugid18301.patch \
+        file://fix-configure-for-openssl-1.0.patch;striplevel=0 \
 	file://logrotate \
 	file://volatiles \
 	file://init"
