@@ -5,6 +5,8 @@ HOMEPAGE = "http://www.gnu.org/software/ghostscript/ghostscript.html"
 DEPENDS = "jpeg fontconfig cups"
 PR = "r0"
 
+PARALLEL_MAKE = ""
+
 SRC_URI = "http://downloads.ghostscript.com/public/ghostscript-${PV}.tar.gz;name=tarball \
            file://unix-aux.mak \
            "
