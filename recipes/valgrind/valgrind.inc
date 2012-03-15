@@ -11,6 +11,5 @@ inherit autotools
 EXTRA_OECONF = "--enable-tls"
 
 PARALLEL_MAKE=""
-COMPATIBLE_HOST = "^(i.86|x86_64).*-linux"
 
 FILES_${PN}-dbg += "/usr/lib/valgrind/*/.debug"

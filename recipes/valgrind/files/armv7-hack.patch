@@ -1,0 +1,11 @@
+--- ./valgrind-3.7.0/configure.in.orig	2012-03-15 12:59:26.076279341 -0400
++++ valgrind-3.7.0/configure.in	2012-03-15 12:59:52.130264408 -0400
+@@ -175,7 +175,7 @@
+         ARCH_MAX="s390x"
+         ;;
+ 
+-     armv7*)
++     arm*)
+ 	AC_MSG_RESULT([ok (${host_cpu})])
+ 	ARCH_MAX="arm"
+ 	;;
