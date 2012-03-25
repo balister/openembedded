@@ -1,8 +1,9 @@
 require recipes/uhd/uhd.inc
 
-PR = "${INC_PR}.9"
+PV = "3.4.0"
+PR = "${INC_PR}.0"
 
 SRC_URI = "git://ettus.sourcerepo.com/ettus/uhd.git;protocol=git"
 S = "${WORKDIR}/git/host"
 
-SRCREV = "f8d66fcfb14062283cdb0d0cbe4f77e2964ceb82"
+SRCREV = "d97b9deec9141968ef9ed04ddf44bffa860a51c2"

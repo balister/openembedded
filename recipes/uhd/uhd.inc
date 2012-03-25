@@ -5,7 +5,7 @@ LICENSE = "GPLV3+"
 DEPENDS = "git-native python-cheetah-native boost libusb1 uhd-firmware orc-native"
 RDEPENDS_${PN} += "uhd-firmware"
 
-INC_PR = "r6"
+INC_PR = "r0"
 
 inherit cmake
 
