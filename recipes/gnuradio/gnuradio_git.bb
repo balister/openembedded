@@ -5,6 +5,8 @@ PRIORITY = "optional"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 
+PR = "r0"
+
 DEPENDS = "uhd gsl fftwf python alsa-lib boost cppunit \
            swig-native python-numpy python-pygtk orc qt4-x11-free qwt"
 
@@ -27,12 +29,11 @@ C_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 #	find ${S} -name Makefile | xargs sed -i s:'-L${STAGING_LIBDIR_NATIVE'::g
 #}
 
-PACKAGES =+ "\
+PACKAGES += "\
   ${PN}-examples \
   ${PN}-grc \
 "
 
-FILES_${PN}-examples = "${datadir}/gnuradio/examples"
 FILES_${PN}-grc = "${datadir}/gnuradio/grc"
 
 FILES_${PN} += "${PYTHON_SITEPACKAGES_DIR}/gnuradio/*"
@@ -42,13 +43,15 @@ FILES_${PN} += "${prefix}/etc/gnuradio/*"
 
 FILES_${PN}-dbg += "${PYTHON_SITEPACKAGES_DIR}/gnuradio/.debug \
                     ${PYTHON_SITEPACKAGES_DIR}/gnuradio/*/.debug \
+		    ${datadir}/gnuradio/examples/fcd/.debug \
 		   "
+FILES_${PN}-examples = "${datadir}/gnuradio/examples"
 
-PV = "3.5.1+"
+PV = "3.5.2+"
 
 FILESPATHPKG_prepend = "gnuradio-git:"
 
-SRCREV = "e0dec91086d82b23a9b47cc05c08ccb55cf1351c"
+SRCREV = "87c8751c99cfb2191bea19557d158fdd952c56eb"
 
 # Make it easy to test against developer repos and branches
 GIT_REPO = "gnuradio.git"
