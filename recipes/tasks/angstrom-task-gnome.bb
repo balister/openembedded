@@ -32,7 +32,7 @@ RDEPENDS_task-gnome-apps = " \
   gftp \
   gimp \
   gnome-games gnome-games-extra-data \
-  gnome-mplayer \
+#  gnome-mplayer \
   gnumeric \
   gphoto2 \
   gthumb \
@@ -53,7 +53,7 @@ RDEPENDS_task-gnome-sdk = " \
   libtool libtool-dev \
   pkgconfig \
   subversion \
-  texinfo \
+#  texinfo \
   task-native-sdk \
  "
 
