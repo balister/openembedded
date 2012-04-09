@@ -5,7 +5,7 @@ ANGSTROM_URI = "http://files.ettus.com"
 
 RRECOMMENDS_${PN} += "opkg"
 
-PR = "r16"
+PR = "r17"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 FEED_BASEPATH = "binaries/oe-classic-feeds/ipk"
@@ -15,7 +15,7 @@ do_compile() {
 	mkdir -p ${S}/${sysconfdir}/opkg
 
 	rm ${S}/${sysconfdir}/opkg/arch.conf || true
-	ipkgarchs="noarch armv7a usrp-e1xx"
+	ipkgarchs="all any noarch armv7a usrp-e1xx"
 	priority=1
 	for arch in $ipkgarchs; do 
 		echo "arch $arch $priority" >> ${S}/${sysconfdir}/opkg/arch.conf
