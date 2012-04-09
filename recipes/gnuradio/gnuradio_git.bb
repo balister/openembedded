@@ -5,7 +5,7 @@ PRIORITY = "optional"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 
-PR = "r1"
+PR = "r0"
 
 DEPENDS = "uhd gsl fftwf python alsa-lib boost cppunit \
            swig-native python-numpy python-pygtk orc qt4-x11-free qwt"
@@ -57,11 +57,11 @@ FILES_${PN}-dbg += "${PYTHON_SITEPACKAGES_DIR}/gnuradio/.debug \
 		   "
 FILES_${PN}-examples = "${datadir}/gnuradio/examples"
 
-PV = "3.5.2+"
+PV = "3.5.3"
 
 FILESPATHPKG_prepend = "gnuradio-git:"
 
-SRCREV = "87c8751c99cfb2191bea19557d158fdd952c56eb"
+SRCREV = "f621a52f779381cfe550b4278b83e701a747944c"
 
 # Make it easy to test against developer repos and branches
 GIT_REPO = "gnuradio.git"
