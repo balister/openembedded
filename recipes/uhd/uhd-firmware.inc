@@ -6,7 +6,7 @@ INC_PR = "r0"
 
 PACKAGE_ARCH = "all"
 
-SRC_URI = "http://files.ettus.com/binaries/stable/releases/uhd_${PV}-release/uhd-images_${PV}-release.tar.gz"
+SRC_URI = "http://files.ettus.com/binaries/uhd_stable/uhd_${PV}-release/uhd-images_${PV}-release.tar.gz"
 
 S = "${WORKDIR}/uhd-images_${PV}-release"
 
