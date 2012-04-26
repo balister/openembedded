@@ -2,6 +2,6 @@ require recipes/uhd/uhd-firmware.inc
 
 PR = "${INC_PR}.0"
 
-SRC_URI[md5sum] = "4269fac82df1fe593ba76206773ce551"
-SRC_URI[sha256sum] = "4b80ebf90079a823212d3b77e5311ef1b467497a4a3585c2cfb4fe65bff71acf"
+SRC_URI[md5sum] = "414dfbb922ab40d62dbbe0f918abf6a1"
+SRC_URI[sha256sum] = "e191b11f414b754d7de3bda46e0d2c217727da8cb7bfa430c98790b23ef7fa2f"
 
