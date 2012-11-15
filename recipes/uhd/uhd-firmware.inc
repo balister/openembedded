@@ -8,7 +8,7 @@ PACKAGE_ARCH = "all"
 
 SRC_URI = "http://files.ettus.com/binaries/uhd_stable/uhd_${PV}-release/uhd-images_${PV}-release.tar.gz"
 
-S = "${WORKDIR}/uhd-images_${PV}-0-release"
+S = "${WORKDIR}/uhd-images_${PV}-release"
 
 do_install() {
 	install -d ${D}${datadir}/uhd/images
