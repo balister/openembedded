@@ -9,12 +9,11 @@ INC_PR = "r0"
 
 inherit cmake
 
-PACKAGES =+ "${PN}-tests ${PN}-examples ${PN}-e1xx"
+PACKAGES =+ "${PN}-tests ${PN}-examples"
 
 FILES_${PN} += "${libdir}/libuhd.so"
 FILES_${PN} += "${datadir}/uhd/utils/*"
 FILES_${PN}-tests += "${datadir}/uhd/tests/*"
-FILES_${PN}-e1xx += "${datadir}/uhd/usrp_e_utils/*"
 FILES_${PN}-dbg += "${datadir}/uhd/examples/.debug/*"
 FILES_${PN}-dbg += "${datadir}/uhd/utils/.debug/*"
 FILES_${PN}-dbg += "${datadir}/uhd/tests/.debug/*"
