@@ -40,7 +40,7 @@ do_compile_prepend() {
 	cp ${S}/gr-vocoder/lib/codec2/defines.h ${OECMAKE_BUILDPATH}/gr-vocoder/lib/codec2
 }
 
-PACKAGES =+ "\
+PACKAGES += "\
   ${PN}-examples \
   ${PN}-grc \
 "
@@ -48,20 +48,21 @@ PACKAGES =+ "\
 FILES_${PN}-grc = "${datadir}/gnuradio/grc"
 
 FILES_${PN} += "${PYTHON_SITEPACKAGES_DIR}/gnuradio/*"
-FILES_${PN} += "${datadir}/gnuradio/*"
+#FILES_${PN} += "${datadir}/gnuradio/*"
 # The following needs fixing upstream
 FILES_${PN} += "${prefix}/etc/gnuradio/*"
 
 FILES_${PN}-dbg += "${PYTHON_SITEPACKAGES_DIR}/gnuradio/.debug \
                     ${PYTHON_SITEPACKAGES_DIR}/gnuradio/*/.debug \
+                    ${datadir}/gnuradio/examples/*/.debug \
 		   "
 FILES_${PN}-examples = "${datadir}/gnuradio/examples"
 
-PV = "3.5.3"
+PV = "3.6.2"
 
 FILESPATHPKG_prepend = "gnuradio-git:"
 
-SRCREV = "f7378fd80df0180a599665b42e89af367f1835c9"
+SRCREV = "6f0fe7776bd6ee3615cc776d38301de4f6755866"
 
 # Make it easy to test against developer repos and branches
 GIT_REPO = "gnuradio.git"
