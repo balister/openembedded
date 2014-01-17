@@ -58,11 +58,11 @@ FILES_${PN}-dbg += "${PYTHON_SITEPACKAGES_DIR}/gnuradio/.debug \
 		   "
 FILES_${PN}-examples = "${datadir}/gnuradio/examples"
 
-PV = "3.6.4.1"
+PV = "3.6.5.1"
 
 FILESPATHPKG_prepend = "gnuradio-git:"
 
-SRCREV = "5f69899e059e9bea58f92af61f70fc3f63825087"
+SRCREV = "37eef3ed1396132c8b0bd26a860458a9d9927403"
 
 # Make it easy to test against developer repos and branches
 GIT_REPO = "gnuradio.git"
