@@ -43,6 +43,7 @@ do_compile_prepend() {
 PACKAGES += "\
   ${PN}-examples \
   ${PN}-grc \
+  ${PN}-modtool \
 "
 
 FILES_${PN}-grc = "${datadir}/gnuradio/grc"
@@ -57,6 +58,8 @@ FILES_${PN}-dbg += "${PYTHON_SITEPACKAGES_DIR}/gnuradio/.debug \
                     ${datadir}/gnuradio/examples/*/.debug \
 		   "
 FILES_${PN}-examples = "${datadir}/gnuradio/examples"
+
+FILES_${PN}-modtool = "${datadir}/gnuradio/modtool"
 
 PV = "3.6.5.1"
 
