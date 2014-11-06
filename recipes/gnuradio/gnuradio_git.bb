@@ -5,7 +5,7 @@ PRIORITY = "optional"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 
-PR = "r0"
+PR = "r1"
 
 DEPENDS = "uhd gsl fftwf python alsa-lib boost cppunit \
            swig-native python-numpy python-pygtk orc qt4-x11-free qwt"
